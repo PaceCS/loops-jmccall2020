@@ -4,11 +4,10 @@ function triangleFor(userInput) {
     let row = '#';
 
     // Fill in the for loop below with the correct conditions
-    for (let counter =/*Put initial condition here*/; counter < /*Put final condition here*/; counter += 1) {
+    for (let counter = 1; counter < userInput + 1; counter += 1) {
         console.log(row);
         row += '#';
     }
-
 }
 
 //Try out your function here.
