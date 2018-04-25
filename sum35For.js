@@ -2,7 +2,24 @@
 // The function outputs the sum of all multiples of 3 and 5 that are less than that number.
 
 function sum35For(N) {
-
+    let a = 0;
+    let b = 0;
+    let c = 0;
+    let d = 0;
+    for (let i = 1; i < N; i += 1) {
+        if (i % 3 == 0) {
+            a = a + 1;
+            c = c + i;
+        }
+        else if (i % 5 == 0) {
+            b = b + 1;
+            d = d + i;
+        }
+    }
+    const e = a + b;
+    console.log('There are ' + e + ' multiples of 3 and 5 that are less than ' + N + '.');
+    const f = c + d;
+    console.log('Their sum is ' + f + '.');
 }
 
 //Try out your function here.

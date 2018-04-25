@@ -1,10 +1,8 @@
-
 // The function min will take in an array and log its minimum value.
 function min(inArray) {
     // We do this by stepping through each entry of the array.
     // First, set the minimum to be the first value in the array.
-    let min = inArray[/*insert the appropriate value here*/];
-
+    let min = inArray[0];
     // Now go through all the remaining entries of the array
     // and determine if the current entry should become the new minimum
     for (let i = 1; i < inArray.length; i += 1) {
@@ -13,24 +11,36 @@ function min(inArray) {
             min = inArray[i];
         }
     }
-
     // Now that the for loop has finished, log the minimum to the console.
-    console.log(/* Put the appropriate variable here */);
+    console.log('The minimum value is ' + min + '.');
 }
 
 // The function max will take in an array and log its maximum value.
 function max(inArray) {
-
+    let max = inArray[0];
+    for (let i = 1; i < inArray.length; i += 1) {
+        if (inArray[i] > max) {
+            max = inArray[i];
+        }
+    }
+    console.log('The maximum value is ' + max + '.');
 }
 
 // The function sum will take in an array and log the sum of the array.
 function sum(inArray) {
-
+    let sum = inArray[0];
+    for (let i = 1; i < inArray.length; i += 1) {
+        sum += inArray[i];
+    }
+    console.log('The sum of the array is ' + sum + '.');
+    return sum;
 }
 
 // The function average will take in an array and log the average of the values.
 function average(inArray) {
-
+    let average = sum(inArray);
+    average /= inArray.length;
+    console.log('The average of the array is ' + average + '.');
 }
 
 
